@@ -19,7 +19,7 @@ function Main() {
                     </a>
                 </div>
                 <div className='flex justify-center'>
-                    <img src={bot} alt="Chatbot" className='w-9/12 sm:w-8/12 md:w-11/12 lg:w-9/12' />
+                    <img src={bot} alt="Chatbot" className='w-9/12 sm:w-8/12 md:w-12/12 lg:w-9/12' />
                 </div>
             </div>
         </div>
