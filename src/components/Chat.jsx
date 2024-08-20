@@ -1,19 +1,30 @@
-import { useState } from 'react'
-import ChatBot from "react-chatbotify"
 
-function App() {
-    const [count, setCount] = useState(0)
 
-    const flow = {
-        "start": {
-            "message": "Hello world!"
-        }
-    }
+import React from 'react';
+import ChatBot from 'react-chatbotify';
+
+const flow = {
+    start: {
+        message: "What is your age?",
+        path: "age"
+    },
+    age: {
+        message: (params) => `I see you are ${params.userInput}! What is your favorite color?`,
+        path: "color"
+    },
+    color: {
+        message: (params) => `Nice! ${params.userInput} is a great color. What is your favorite hobby?`,
+        path: "hobby"
+    },
+};
+
+
+const MyChatBot = () => {
     return (
-        <>
+        <div>
             <ChatBot flow={flow} />
-        </>
-    )
-}
+        </div>
+    );
+};
 
-export default App
+export default MyChatBot;
