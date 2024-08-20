@@ -1,7 +1,9 @@
-
-
 import React from 'react';
 import ChatBot from 'react-chatbotify';
+
+const header = {
+    title: "Farirai's Chat Bot",
+};
 
 const flow = {
     start: {
@@ -18,11 +20,10 @@ const flow = {
     },
 };
 
-
 const MyChatBot = () => {
     return (
         <div>
-            <ChatBot flow={flow} />
+            <ChatBot flow={flow} name="Farirai" header={header} />
         </div>
     );
 };
