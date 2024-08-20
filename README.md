@@ -1,8 +1,18 @@
-# React + Vite
+# ChatSphere
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ChatSphere is a customizable web chatbot built using React and Tailwind CSS. It is designed to be easily tuned and adapted for different companies, allowing for a personalized chat experience.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+
+
+## Features
+
+- **Customizable**: Tailor the chatbot to meet the needs of different companies.
+- **Responsive Design**: Utilizes Tailwind CSS for a modern, responsive user interface.
+- **Easy Integration**: Integrate ChatSphere into any web application with minimal setup.
+- **Scalable**: Built with React, making it scalable and easy to maintain.
+
+
+   
