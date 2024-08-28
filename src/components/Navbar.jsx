@@ -46,8 +46,7 @@ function Navbar() {
                         <div className='flex flex-col justify-between p-4 leading-normal w-full'>
                             <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>Final Year Project: Chatbot for Online Pharmacy</h5>
                             <p className='mb-3 font-normal text-gray-700'>This project focuses on developing a chatbot that assists users in an online pharmacy by gathering necessary information before delivering prescriptions.</p>
-                            <p className='mb-3 font-normal text-gray-700'><strong>Name:</strong> Shantel Nyoni Masocha</p>
-                            <p className='mb-3 font-normal text-gray-700'><strong>GitHub:</strong> <a href="https://github.com/fariraimasocha/ChatSphere" className='text-blue-500 hover:underline' target='_blank' rel='noopener noreferrer'>https://github.com/fariraimasocha/ChatSphere</a></p>
+                            <p className='mb-3 font-normal text-gray-700'><strong>Name:</strong> Shantel Nyoni</p>
                             <p className='mb-3 font-normal text-gray-700'><strong>How it helps:</strong>
                                 Say goodbye to long wait times and frustrating interactions.
                                 Our chatbots provide 24/7 assistance tailored to your customers.
