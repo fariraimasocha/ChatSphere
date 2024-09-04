@@ -12,9 +12,9 @@ function Main() {
                     <p className='text-white mt-4 sm:mt-6 text-lg sm:text-xl w-full lg:w-10/12'>
                         Say goodbye to long wait times and frustrating interactions. Our chatbots provide 24/7 assistance tailored to your customers.
                     </p>
-                    <a href="">
+                    <a href="/signup">
                         <button className='rounded-3xl text-black px-8 sm:px-10 mt-4 sm:mt-5 py-3 bg-white'>
-                            Get Started
+                            Sign Up
                         </button>
                     </a>
                 </div>
