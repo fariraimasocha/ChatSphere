@@ -2,48 +2,40 @@ import React from 'react';
 import ChatBot from 'react-chatbotify';
 
 const header = {
-    title: "Shantel's Online Pharmacy",
+    title: "Welcome to MC's Service Station",
 };
 
 const flow = {
     start: {
-        message: "Welcome to Shantel's Online Pharmacy! May I have your full name, please?",
+        message: "Welcome to MC's Service Station! May I have your full name, please?",
         path: "name"
     },
     name: {
-        message: (params) => `Nice to meet you, ${params.userInput}! What is your age?`,
-        path: "age"
+        message: (params) => `Nice to meet you, ${params.userInput}! What type of service do you need today? (e.g., fuel, car wash, maintenance)`,
+        path: "service_type"
     },
-    age: {
-        message: (params) => `Thank you. Could you describe the symptoms you are experiencing?`,
-        path: "symptoms"
+    service_type: {
+        message: (params) => `Thank you! Can you tell me your vehicle's make and model?`,
+        path: "vehicle_info"
     },
-    symptoms: {
-        message: (params) => `Got it. Do you have any known allergies?`,
-        path: "allergies"
+    vehicle_info: {
+        message: (params) => `Got it. What is your vehicle's license plate number?`,
+        path: "license_plate"
     },
-    allergies: {
-        message: (params) => `Thanks for letting me know. Are you currently on any medication? If so, please specify.`,
-        path: "medication"
+    license_plate: {
+        message: (params) => `Thanks! Do you have any specific concerns or issues with your vehicle?`,
+        path: "vehicle_concerns"
     },
-    medication: {
-        message: (params) => `Understood. Do you have any existing medical conditions?`,
-        path: "medical_conditions"
+    vehicle_concerns: {
+        message: (params) => `Understood. Would you like to schedule an appointment for service or get an estimate?`,
+        path: "appointment_or_estimate"
     },
-    medical_conditions: {
-        message: (params) => `Thank you. Could you provide your address for delivery?`,
-        path: "address"
+    appointment_or_estimate: {
+        message: (params) => `Great! What date and time works best for you?`,
+        path: "schedule_time"
     },
-    address: {
-        message: (params) => `Thanks! What is your preferred payment method (e.g., credit card, PayPal)?`,
-        path: "payment_method"
-    },
-    payment_method: {
-        message: (params) => `Great choice. Would you like to upload any prescriptions you have, or do you need a new one issued?`,
-        path: "prescription"
-    },
-    prescription: {
-        message: (params) => `Thank you for the information. Your prescription will be delivered shortly!`,
+    schedule_time: {
+        message: (params) => `Thank you for the information! Is there anything else you would like assistance with?`,
         path: "end"
     },
     end: {
