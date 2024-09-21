@@ -3,7 +3,7 @@ import bot from '/images/bots/chat.png';
 
 function Main() {
     return (
-        <div className='px-6 py-5'>
+        <div className='px-6 py-6'>
             <div className='flex flex-col-reverse lg:flex-row justify-between space-y-5 lg:space-y-0 lg:space-x-5'>
                 <div className='px-2 mt-12 lg:mt-32'>
                     <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white'>
